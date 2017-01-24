@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> CheckIn </title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="home.html" class="logo">
+      <span class="glyphicon glyphicon-book logo-lg"><strong> Book Inventory </strong></span>
+    </a>
+	
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+          
+          
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+             
+			  <span class="glyphicon glyphicon-user"></span>
+              <span class="hidden-xs">Pallavi Sharma</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="dist/img/avatar2.png" class="img-circle" alt="User Image">
+
+                <p>
+                  Pallavi Sharma
+                </p>
+              </li>
+                            
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                </div>
+                <div class="pull-right">
+                  <a href="login.html" class="btn btn-default btn-flat">Sign out</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =============================================== -->
+
+  <!-- Left side column. contains the sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="dist/img/avatar2.png" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Pallavi Sharma</p>
+        </div>
+      </div>
+      
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <li class="header">MENU</li>
+        
+		<li><a href="checkin.html"><i class="fa fa-edit"></i> Books CheckIn</a></li>
+		<li><a href="search.html"><i class="fa fa-search"></i> Search Books</a></li>
+		<li><a href="login.html"><i class="fa fa-sign-out"></i> Logout</a></li>
+        
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- =============================================== -->
+
+  <!-- Content Wrapper. Contains page content -->
+  <!-- page content -->
+     <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+     <section class="content-header">
+			<h2>Books Check In</h2>
+	 
+			<hr>
+                    <form class="form-horizontal form-label-left" novalidate>                   
+
+                      <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="isbn">ISBN <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="isbn" class="form-control col-md-7 col-xs-12"  name="isbn"  required="required" type="text">
+                        </div>
+                      </div>
+					  <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="title">Title <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="title" class="form-control col-md-7 col-xs-12"  name="title"  required="required" type="text">
+                        </div>
+                      </div>
+					  <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="publisher">Publisher <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="Publisher" class="form-control col-md-7 col-xs-12"  name="Publisher"  required="required" type="text">
+                        </div>
+                      </div>
+					  <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="quantity">Quantity <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="quantity" class="form-control col-md-7 col-xs-12"  name="quantity"  required="required" type="text">
+                        </div>
+                      </div>
+					  <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="price">Price <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="price" class="form-control col-md-7 col-xs-12"  name="price"  required="required" type="text">
+                        </div>
+                      </div>
+					  <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="binding">Binding <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="binding" class="form-control col-md-7 col-xs-12"  name="binding"  required="required" type="text">
+                        </div>
+                      </div>
+                      <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="location">Bin Location <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="location" class="form-control col-md-7 col-xs-12"  name="location"  required="required" type="text">
+                        </div>
+                      </div>
+					  <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="spot">Spot <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="spot" class="form-control col-md-7 col-xs-12"  name="spot"  required="required" type="text">
+                        </div>
+                      </div>
+					  <div class="item form-group">
+                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="level">Reading Level <span class="required">*</span>
+                        </label>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                          <input id="level" class="form-control col-md-7 col-xs-12"  name="level"  required="required" type="text">
+                        </div>
+                      </div>            
+                                                               
+                      <div class="ln_solid"></div>
+                      <div class="form-group">
+                        <div class="col-md-6 col-md-offset-3">
+                          <button type="submit" class="btn btn-primary">Cancel</button>
+						  
+                          <button id="send" type="submit" class="btn btn-success" > <a href="success.html">Submit</a></button>
+                        </div>
+                      </div>
+                    </form>
+					
+					
+			</section>
+        </div>
+        <!-- /page content -->
+
+      
+	  <!-- =============================================== -->
+
+  <!-- Footer  -->
+     
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Version</b> 2.3.11
+    </div>
+    <strong>Copyright &copy; 2016-2017 <a href="http://almsaeedstudio.com">Book Inventory</a>.</strong> All rights
+    reserved.
+  </footer>
+
+  <!-- ./wrapper -->
+
+<!-- jQuery 2.2.3 -->
+<script src="plugins/jQuery/jquery-2.2.3.min.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="plugins/fastclick/fastclick.js"></script>
+<!--  App -->
+
+<script src="dist/js/app.min.js"></script>
+<!-- demo purposes -->
+<script src="dist/js/demo.js"></script>
+
+</body>
+</html>
